@@ -5,6 +5,8 @@
  * @format
  */
 
+import {translate} from '@shared';
+import {Themes} from '@themes';
 import React from 'react';
 import {
   SafeAreaView,
@@ -31,7 +33,7 @@ function App(): JSX.Element {
         backgroundColor={backgroundStyle.backgroundColor}
       />
       <View>
-        <Text style={styles.test}>hai</Text>
+        <Text style={styles.test}>{translate('error.haiTest')}</Text>
       </View>
     </SafeAreaView>
   );
@@ -39,7 +41,7 @@ function App(): JSX.Element {
 
 const styles = StyleSheet.create({
   test: {
-    color: 'red',
+    color: Themes.colors.red0033,
   },
   sectionContainer: {
     marginTop: 32,
